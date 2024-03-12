@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="padding: 5px;">
+    Id:
+    <input type="text" id="id">
+    <br>
+    Name:
+    <input type="text" id="name">
+    <br>
+    Describe:
+    <input type="text" id="code">
+    <br>
+    Price:
+    <input type="text" id="price">
+    <br>
+    Image:
+    <label for="image">
+      <input type="file" id="image" accept="image" >
+    </label>
+    <br>
+    Category:
+    <select name="" id="showall">
+      <option value="nam">Nam</option>
+      <option value="nu">Nữ</option>
+    </select>
+    <br>
+    <input type="button" value="save" onclick="save()">
+    <input type="button" value="show " onclick="show()">
+    <input type="button" value="reset" onclick="reset()">
+    <h1><center>THỜI TRANG NAM</center></h1>
+    <table class="table thead-dark" style="background-color:aliceblue;">
+      <thead style="background-color: aqua;">
+        <tr>
+          <th>STT</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Describe</th>
+          <th>Price</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody id="tblman"></tbody>
+    </table>
+    <h1><center>THỜI TRANG NỮ</center></h1>
+    <table class="table thead-dark" style="background-color:aliceblue;">
+      <thead style="background-color: aqua;">
+        <tr>
+          <th>STT</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Describe</th>
+          <th>Price</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody id="tblwoment"></tbody>
+    </table>
+    
+</body>
+</html>
